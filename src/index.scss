@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.page {
+  height: 100vh;
+  background-color: lightcoral;
+  display: flex;
+
+  .container {
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin: auto;
+    justify-content: center;
+    align-self: center;
+    box-shadow: 1px 2px 18px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+  }
+}
+
+.itemInput {
+  padding: 0.25 rem;
+
+  &:focus,
+  &:hover {
+    outline: none;
+    border-bottom: 2px solid black;
+  }
+}
+
+.listItems {
+  display: block;
+
+  .singleItem {
+    display: flex;
+    margin: auto;
+
+    span {
+      padding-right: 0.1rem;
+      cursor: pointer;
+    }
+  }
+}
+
+button {
+  margin: 0.5rem;
+  cursor: pointer;
+}
